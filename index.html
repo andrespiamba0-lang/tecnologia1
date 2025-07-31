@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App de Notas</title>
+  <link rel="stylesheet" href="stiles.css"/>
+</head>
+
+<body>
+    <!-- MENÚ SUPERIOR -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <img src="https://via.placeholder.com/40" alt="Logo" class="logo-img">
+        <span style="margin-left: 10px;">MiApp</span>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">Menú ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Perfil</a>
+          <a href="#">Configuración</a>
+          <a href="#">Cerrar sesión</a>
+        </div>
+      </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Notas</a></li>
+      <li><a href="./registro_usuarios/index1.html">Acerca</a></li>
+      <li><a href="./index1.html">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <div class="contenedor-titulo">
+    <h2>LA TECNOLOGIA DEL FUTURO</h2>
+  </div>
+    <div class="slider-container">
+        <div class="slider-loop">
+          <img src="https://picsum.photos/id/1015/800/300" alt="Imagen 1">
+          <img src="https://picsum.photos/id/1016/800/300" alt="Imagen 2">
+          <img src="https://picsum.photos/id/1018/800/300" alt="Imagen 3">
+          <!-- Duplicamos para efecto de loop continuo -->
+          <img src="https://picsum.photos/id/1015/800/300" alt="Imagen 1 copia">
+          <img src="https://picsum.photos/id/1016/800/300" alt="Imagen 2 copia">
+          <img src="https://picsum.photos/id/1018/800/300" alt="Imagen 3 copia">
+        </div>
+      </div>
+
+      
+
+
+  <h1>🎵 Escucha Radio IPUC Medellín</h1>
+  
+  <!-- Botón para escuchar desde emisorascolombianas.co -->
+  <a href="https://www.emisorascolombianas.co/radio-ipuc" target="_blank" class="btn">Escuchar en vivo</a>
+
+  <!-- Botón para escuchar desde YouTube -->
+  <a href="https://www.youtube.com/@radioipuc731/live" target="_blank" class="btn">YouTube en vivo</a>
+
+  <!-- Botón para la app Android -->
+  <a href="https://play.google.com/store/apps/details?id=com.luniapps.radioipucenvivoemisoramedellin" target="_blank" class="btn">App Android</a>
+
+  <div>
+    <button id="btnPlay">▶ Reproducir</button>
+    <button id="btnPause">⏸ Pausar</button>
+  </div>
+
+
+      <div class="contenedor">
+        <h2>Subir y guardar archivo</h2>
+        <form action="uploand.php" method="POST" enctype="multipart/form-data">
+          <div>
+              <label for="archivo">Seleccionar archivo:</label>
+              <input type="file" name="archivo" id="archivo" required>
+          </div>
+          <button type="submit">Subir</button>
+      </form>
+      <div id="mensaje">
+      </div>
+
+  <script src="scrit.js"></script>
+    <h1>Mis Notas</h1>
+    <textarea id="noteInput" placeholder="Escribe tu nota..."></textarea>
+    <button id="addNoteBtn">Agregar Nota</button>
+    <div id="notesContainer"></div>
+  </div>
+  <script src="scrit.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 MiApp. Todos los derechos reservados Andres piamba.</p>
+    <p>Contáctanos: <a href="https://mail.google.com">andrespiamba0@gmail</a></p>
+    
+    <!-- REDES SOCIALES -->
+   
+    <div class="social-icons">
+      <a href="https://facebook.com/tuusuario" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/48/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/tuusuario" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/48/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/1234567890" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/48/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="https://twitter.com/tuusuario" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/48/733/733579.png" alt="Twitter">
+      </a>
+    </div>
+    
+   
+  </footer>
+  
+</body>
+</html>
