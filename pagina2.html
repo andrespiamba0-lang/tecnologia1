@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App de Notas</title>
+  <link rel="stylesheet" href="stiles.css"/>
+</head>
+<body>
+    <!-- MENÚ SUPERIOR -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <img src="https://via.placeholder.com/40" alt="Logo" class="logo-img">
+        <span style="margin-left: 10px;">MiApp</span>
+      </div>
+    
+      <div class="dropdown">
+        <button class="dropbtn">Menú ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Perfil</a>
+          <a href="#">Configuración</a>
+          <a href="#">Cerrar sesión</a>
+        </div>
+      </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Notas</a></li>
+      <li><a href="#">Acerca</a></li>
+    </ul>
+  </nav>
+  
+  <div class="contenedor-titulo">
+    <h2>LA TECNOLOGIA DEL FUTURO</h2>
+  </div>
+    <div class="slider-container">
+        <div class="slider-loop">
+          <img src="https://picsum.photos/id/1015/800/300" alt="Imagen 1">
+          <img src="https://picsum.photos/id/1016/800/300" alt="Imagen 2">
+          <img src="https://picsum.photos/id/1018/800/300" alt="Imagen 3">
+          <!-- Duplicamos para efecto de loop continuo -->
+          <img src="https://picsum.photos/id/1015/800/300" alt="Imagen 1 copia">
+          <img src="https://picsum.photos/id/1016/800/300" alt="Imagen 2 copia">
+          <img src="https://picsum.photos/id/1018/800/300" alt="Imagen 3 copia">
+        </div>
+      </div>
+      
+  <div class="container">
+    <h1>Mis Notas</h1>
+    <textarea id="noteInput" placeholder="Escribe tu nota..."></textarea>
+    <button id="addNoteBtn">Agregar Nota</button>
+    <div id="notesContainer"></div>
+  </div>
+  <script src="scrit.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 MiApp. Todos los derechos reservados Andres piamba.</p>
+  </footer>
+  
+</body>
+</html>
